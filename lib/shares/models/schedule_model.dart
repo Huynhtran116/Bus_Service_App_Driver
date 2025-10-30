@@ -47,6 +47,8 @@ class LichTrinh {
   final String sdtHocSinh;
   final String mahs;
   final String avatar;
+  final String lop;
+  final String state;
   final PhuHuynh phuHuynh;
 
   LichTrinh({
@@ -56,6 +58,8 @@ class LichTrinh {
     required this.sdtHocSinh,
     required this.mahs,
     required this.avatar,
+    required this.lop,
+    required this.state,
     required this.phuHuynh,
   });
 
@@ -67,6 +71,8 @@ class LichTrinh {
       sdtHocSinh: json['sdt_hocsinh'] ?? '',
       mahs: json['mahs'] ?? '',
       avatar: json['avatar'] ?? '',
+      lop: json['lop'] ?? '',
+      state: json['state'] ?? '',
       phuHuynh: PhuHuynh.fromJson(json['phu_huynh']),
     );
   }
@@ -79,6 +85,8 @@ class LichTrinh {
       "sdt_hocsinh": sdtHocSinh,
       "mahs": mahs,
       "avatar": avatar,
+      "lop": lop,
+      "state": state,
       "phu_huynh": phuHuynh.toJson(),
     };
   }

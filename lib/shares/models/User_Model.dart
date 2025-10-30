@@ -1,6 +1,6 @@
 
 import 'User_Profile.dart';
-import 'Driver_Profile.dart'; // chứa class TaiXeInfo
+import 'Driver_Profile.dart';
 
 class UserModel {
   final String id;
